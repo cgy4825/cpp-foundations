@@ -1,4 +1,12 @@
 // 1) 这里应该是头文件包含保护，但是这个例子中只有一个头文件，为了简化这里就省略了
- 
+#ifndef CALC_H
+#define CALC_H
+
+
 // 2) .h 文件的内容，声明都写在这里
 int add(int x, int y); // 函数原型——不要忘记分号！
+int mul(int x,int y);
+double divi(int x,int y);
+int sub(int x,int y);
+
+#endif
