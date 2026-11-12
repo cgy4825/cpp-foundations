@@ -67,7 +67,9 @@ int main() {
     print(reverse);
     fill(m,10);
     print(m);
-    // destroy(m);
+    destroy(m);
+    destroy(reverse);
+    // destroy(reverse);
     // std::cout << m.data[0] << std::endl;   // 访问已释放的内存
     return 0;
 }
