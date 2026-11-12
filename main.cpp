@@ -1,6 +1,7 @@
 #include <iostream>
-#include "calc.h"
-#include "geometrry.h"
+// #include "calc.h"
+// #include "geometrry.h"
+#include <string>
 
 
 int main(){
@@ -18,7 +19,16 @@ int main(){
     // std::cin >> num;
     // std::cout << "the double of your enter is " << num * 2 << std::endl;
 
-    std::cout << "x + y 的值为： "<< add(3,4) <<std::endl;
+    // std::cout << "x + y 的值为： "<< add(3,4) <<std::endl;
+    std::cout << "Pick 1 or 2: ";
+    int choice{};
+    std::cin >> choice;
+ 
+    std::cout << "Now enter your name: ";
+    std::string name{};
+    std::getline(std::cin >> std::ws, name); // note: added std::ws here
+ 
+    std::cout << "Hello, " << name << ", you picked " << choice << '\n';
 
     return 0;
 }
